@@ -17,14 +17,25 @@
       color: #333;
     }
 
+    .qrcode-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 40px; /* espaço entre os blocos */
+      flex-wrap: wrap; /* permite quebrar linha em telas menores */
+    }
+
     .qrcode-container {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 20px;
-      margin: 20px auto;
-      max-width: 300px;
+      width: 250px;
       text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .qrcode-container:hover {
+      transform: translateY(-5px);
     }
 
     .qrcode-container p {
@@ -37,7 +48,7 @@
     .qrcode-container img {
       border: 3px solid #ddd;
       border-radius: 8px;
-      transition: transform 0.3s;
+      transition: transform 0.3s, border-color 0.3s;
     }
 
     .qrcode-container img:hover {
@@ -53,18 +64,20 @@
 <body>
   <h1>Meus QR Codes - Snack Expo</h1>
 
-  <div class="qrcode-container">
-    <p>Calculadora Snack Expo</p>
-    <a href="https://snack.expo.dev/?platform=android" target="_blank">
-      <img src="snack expo.png.png" alt="QR Code Calculadora" width="200" height="200">
-    </a>
-  </div>
+  <div class="qrcode-wrapper">
+    <div class="qrcode-container">
+      <p>Calculadora Snack Expo</p>
+      <a href="https://snack.expo.dev/?platform=android" target="_blank">
+        <img src="snack expo.png.png" alt="QR Code Calculadora" width="200" height="200">
+      </a>
+    </div>
 
-  <div class="qrcode-container">
-    <p>Troca Tela Snack Expo</p>
-    <a href="https://snack.expo.dev/@miguel1309/d808d1?platform=ios" target="_blank">
-      <img src="qr.png.png" alt="QR Code Troca Tela" width="200" height="200">
-    </a>
+    <div class="qrcode-container">
+      <p>Troca Tela Snack Expo</p>
+      <a href="https://snack.expo.dev/@miguel1309/d808d1?platform=ios" target="_blank">
+        <img src="qr.png.png" alt="QR Code Troca Tela" width="200" height="200">
+      </a>
+    </div>
   </div>
 </body>
 </html>
