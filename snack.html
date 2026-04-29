@@ -2,36 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>QR Code com Nome e Link</title>
+  <title>QR Codes - Snack Expo</title>
   <style>
-    .qrcode-container {
-      text-align: center; /* centraliza tudo */
-      margin-top: 50px;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 30px;
     }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .qrcode-container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 300px;
+      text-align: center;
+    }
+
     .qrcode-container p {
       font-size: 18px;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .qrcode-container img {
+      border: 3px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .qrcode-container img:hover {
+      transform: scale(1.05);
+      border-color: #007BFF;
+    }
+
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <h1>Meus QR Codes - Snack Expo</h1>
+
   <div class="qrcode-container">
-    <!-- Nome que aparece na tela -->
-    <p>Calculadora snack expo</p>
-    
-    <!-- QR Code com link -->
+    <p>Calculadora Snack Expo</p>
     <a href="https://snack.expo.dev/?platform=android" target="_blank">
-      <img src="snack expo.png.png" alt="QR Code" width="200" height="200">
+      <img src="snack expo.png.png" alt="QR Code Calculadora" width="200" height="200">
     </a>
   </div>
+
   <div class="qrcode-container">
-    <!-- Nome que aparece na tela -->
-    <p>Troca tela snack expo</p>
-    
-    <!-- QR Code com link -->
+    <p>Troca Tela Snack Expo</p>
     <a href="https://snack.expo.dev/@miguel1309/d808d1?platform=ios" target="_blank">
-      <img src="qr.png.png" alt="QR Code" width="200" height="200">
+      <img src="qr.png.png" alt="QR Code Troca Tela" width="200" height="200">
     </a>
   </div>
 </body>
