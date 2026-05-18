@@ -6,37 +6,35 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #eaeaea;
       margin: 0;
       padding: 30px;
+      background: url('capitao.jpg') no-repeat center center fixed; /* coloque aqui sua imagem */
+      background-size: cover;
     }
 
     h1 {
       text-align: center;
       margin-bottom: 40px;
-      color: #222;
+      color: #fff; /* texto branco para contraste */
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     }
 
     .qrcode-wrapper {
       display: flex;
       justify-content: center;
-      gap: 40px; /* espaço entre os blocos */
-      flex-wrap: wrap; /* responsivo em telas menores */
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
     .qrcode-container {
-      background: linear-gradient(135deg, #007BFF, #00C6FF); /* cor de fundo bonita */
+      background: rgba(0,0,0,0.6); /* fundo translúcido para destacar */
       border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
       padding: 20px;
       width: 260px;
       text-align: center;
       transition: transform 0.3s;
       color: #fff;
-    }
-
-    .qrcode-container:nth-child(2) {
-      background: linear-gradient(135deg, #FF6B6B, #FFD93D); /* cor diferente para o segundo bloco */
     }
 
     .qrcode-container:hover {
@@ -57,7 +55,7 @@
 
     .qrcode-container img:hover {
       transform: scale(1.08);
-      border-color: #222;
+      border-color: #ffd700;
     }
 
     a {
